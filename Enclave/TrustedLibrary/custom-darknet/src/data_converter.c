@@ -81,4 +81,4 @@ data load_categorical_data_csv(char *file_bytes, int file_length, int target, in
     d.y = y;
     free(truth_1d);
     return d;
-}
+} 
