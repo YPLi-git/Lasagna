@@ -18,7 +18,7 @@ COST_TYPE get_cost_type(char *s)
 }  
        
 char *get_cost_string(COST_TYPE a)
-{
+{ 
     switch(a){
         case SEG:
             return "seg";
