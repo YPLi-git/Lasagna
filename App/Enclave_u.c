@@ -87,5 +87,5 @@ sgx_status_t ecall_thread_enter_enclave_waiting(sgx_enclave_id_t eid, int thread
 	status = sgx_ecall(eid, 2, &ocall_table_Enclave, &ms);
 	return status;
 }
-
-  
+ 
+   
