@@ -34,7 +34,7 @@ void binarize_cpu(float *input, int n, float *binary)
         binary[i] = (input[i] > 0) ? 1 : -1;
     }
 }
-
+ 
 void binarize_input(float *input, int n, int size, float *binary)
 {
     int i, s;
