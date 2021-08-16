@@ -28,7 +28,7 @@ char *sgets(char *s, int n, const char **strp){
             break;
         if(**strp == '\n'){  
             s[i+1]='\0'; 
-            ++(*strp);
+            ++(*strp); 
             break;
         }
     }
