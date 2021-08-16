@@ -22,7 +22,7 @@ void reorg_cpu(float *x, int w, int h, int c, int batch, int stride, int forward
                     else out[in_index] = x[out_index];
                 }
             }
-        }
+        } 
     }
 }
 
