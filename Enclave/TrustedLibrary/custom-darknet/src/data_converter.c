@@ -30,7 +30,7 @@ char *sgets(char *s, int n, const char **strp){
             s[i+1]='\0'; 
             ++(*strp); 
             break;
-        }
+        } 
     }
     if(i==n-1)
         s[i] = '\0';
