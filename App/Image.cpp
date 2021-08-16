@@ -87,7 +87,7 @@ image load_image_stb(char *filename, int channels)
     free(data);
     return im;
 }
- 
+  
 image resize_image(image im, int w, int h)
 {
     image resized = make_image(w, h, im.c);   
