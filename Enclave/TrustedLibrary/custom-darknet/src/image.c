@@ -11,7 +11,7 @@ float im2col_get_pixel(float *im, int height, int width, int channels,
         row >= height || col >= width) return 0;
     return im[col + width*(row + height*channel)];
 }
-
+ 
 //From Berkeley Vision's Caffe!
 //https://github.com/BVLC/caffe/blob/master/LICENSE
 void im2col_cpu(float* data_im,
