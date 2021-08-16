@@ -26,7 +26,7 @@ void im2col_cpu(float* data_im,
     for (c = 0; c < channels_col; ++c) {
         int w_offset = c % ksize;
         int h_offset = (c / ksize) % ksize;
-        int c_im = c / ksize / ksize;
+        int c_im = c / ksize / ksize; 
         for (h = 0; h < height_col; ++h) {
             for (w = 0; w < width_col; ++w) {
                 int im_row = h_offset + h * stride;
