@@ -59,7 +59,7 @@ matrix csv_to_matrix(char *file_bytes, int file_size)
         }
         m.vals[n] = parse_fields(buff, m.cols);
         ++n;
-    }
+    } 
 
     m.vals = realloc(m.vals, n*sizeof(float*));
     m.rows = n;
