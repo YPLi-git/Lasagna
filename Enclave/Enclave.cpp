@@ -165,8 +165,6 @@ void ecall_thread_enter_enclave_waiting(int thread_id)
 {
     while (1) {
 
-        // printf("begin in waiting, thread %d, finished is: %d \n", thread_id, g_finished[thread_id]);
-        // printf("Thread %d waiting..\n", thread_id);
         sgx_spin_lock(&g_spin_locks[thread_id]);
         // printf("Thread %d processing (%d,%d) i_start=%d, M=%d, N=%d, K=%d, A[0]=%f, A[999]=%f, B[0]=%f, B[9999]=%f, C[0]=%f\n", thread_id, g_gemm_args_pointer[thread_id].TA, g_gemm_args_pointer[thread_id].TB, g_gemm_args_pointer[thread_id].i_start,  g_gemm_args_pointer[thread_id].M, g_gemm_args_pointer[thread_id].N, g_gemm_args_pointer[thread_id].K,  g_gemm_args_pointer[thread_id].A[0], g_gemm_args_pointer[thread_id].A[999],  g_gemm_args_pointer[thread_id].B[0], g_gemm_args_pointer[thread_id].B[9999], g_gemm_args_pointer[thread_id].C[0]);
         // ocall_start_measuring_training(thread_id+3, 10);
