@@ -88,7 +88,7 @@ void normalize_delta_cpu(float *x, float *mean, float *variance, float *mean_del
                 int index = j*filters*spatial + f*spatial + k;
                 delta[index] = delta[index] * 1./(sqrt(variance[f] + .00001f)) + variance_delta[f] * 2. * (x[index] - mean[f]) / (spatial * batch) + mean_delta[f]/(spatial*batch);
             }
-        }
+        } 
     }
 }
 
