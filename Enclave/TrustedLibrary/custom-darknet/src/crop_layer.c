@@ -36,7 +36,7 @@ crop_layer make_crop_layer(int batch, int h, int w, int c, int crop_height, int 
     l.output = calloc(l.outputs*batch, sizeof(float));
     l.forward = forward_crop_layer;
     l.backward = backward_crop_layer;
-
+ 
     #ifdef GPU
     l.forward_gpu = forward_crop_layer_gpu;
     l.backward_gpu = backward_crop_layer_gpu;
