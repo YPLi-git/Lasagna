@@ -12,7 +12,7 @@ typedef struct {
     int h;
     int c;
     float *data;
-} image;
+} image; 
 
 void free_image(image m)
 {
