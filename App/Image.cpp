@@ -63,7 +63,7 @@ image make_image(int w, int h, int c)
     out.data = (float*)calloc(h*w*c, sizeof(float));
     return out;
 }
-
+ 
 image load_image_stb(char *filename, int channels)
 {
     int w, h, c;
