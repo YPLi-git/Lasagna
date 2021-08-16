@@ -131,7 +131,7 @@ image resize_image(image im, int w, int h)
     free_image(part);
     return resized;
 }
-
+ 
 image load_image(char *filename, int w, int h, int c)
 {
 #ifdef OPENCV
