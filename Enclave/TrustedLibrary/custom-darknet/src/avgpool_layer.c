@@ -1,5 +1,5 @@
 // #include "avgpool_layer.h"
-// #include "cuda.h"
+// #include "cuda"
 #include "standard.h"
 #include <stdio.h>
 
