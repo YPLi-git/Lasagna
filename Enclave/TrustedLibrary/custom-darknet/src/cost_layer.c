@@ -16,7 +16,7 @@ COST_TYPE get_cost_type(char *s)
     //fprintf(stderr, "Couldn't find cost type %s, going with SSE\n", s);
     return SSE;
 }
-  
+   
 char *get_cost_string(COST_TYPE a)
 {
     switch(a){
