@@ -49,7 +49,7 @@ void binarize_input(float *input, int n, int size, float *binary)
         }
     }
 }
-
+ 
 int convolutional_out_height(convolutional_layer l)
 {
     return (l.h + 2*l.pad - l.size) / l.stride + 1;
