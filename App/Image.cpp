@@ -154,7 +154,7 @@ image load_image_color(char *filename, int w, int h)
 }
 
 void embed_image(image source, image dest, int dx, int dy)
-{
+{ 
     int x,y,k;
     for(k = 0; k < source.c; ++k){
         for(y = 0; y < source.h; ++y){
