@@ -63,7 +63,7 @@ void mean_delta_cpu(float *delta, float *variance, int batch, int filters, int s
         }
         mean_delta[i] *= (-1./sqrt(variance[i] + .00001f));
     }
-}
+} 
 void  variance_delta_cpu(float *x, float *delta, float *mean, float *variance, int batch, int filters, int spatial, float *variance_delta)
 {
  
