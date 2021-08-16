@@ -146,7 +146,7 @@ image load_image(char *filename, int w, int h, int c)
         out = resized;
     }
     return out;
-}
+} 
 
 image load_image_color(char *filename, int w, int h)
 {
