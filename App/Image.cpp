@@ -71,7 +71,7 @@ image load_image_stb(char *filename, int channels)
     if (!data) {
         fprintf(stderr, "Cannot load image \"%s\"\nSTB Reason: %s\n", filename, stbi_failure_reason());
         exit(0);
-    }
+    } 
     if(channels) c = channels;
     int i,j,k;
     image im = make_image(w, h, c);
