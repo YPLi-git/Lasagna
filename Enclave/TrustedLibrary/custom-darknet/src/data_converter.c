@@ -64,7 +64,7 @@ matrix csv_to_matrix(char *file_bytes, int file_size)
     m.vals = realloc(m.vals, n*sizeof(float*));
     m.rows = n;
     return m;
-}
+} 
 
 data load_categorical_data_csv(char *file_bytes, int file_length, int target, int k)
 {
