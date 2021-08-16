@@ -90,7 +90,7 @@ void normalize_delta_cpu(float *x, float *mean, float *variance, float *mean_del
             }
         } 
     }
-}
+} 
  
 void resize_batchnorm_layer(layer *layer, int w, int h)
 {
