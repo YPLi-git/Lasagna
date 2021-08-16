@@ -155,8 +155,7 @@ void ecall_build_network(char *cfg, int cfg_length, char *weights, int weights_l
         load_weights(net, weights);
     }
 
-    // printf("build over -------------------------------4\n");
-    
+
     final_net = net;
     // free_network(final_net);
 }
