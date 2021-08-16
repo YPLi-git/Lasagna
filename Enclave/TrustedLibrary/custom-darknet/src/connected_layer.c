@@ -4,7 +4,7 @@
 #include "standard.h"
 
 #include "Enclave_t.h" /* ocalls */
-
+ 
 layer make_connected_layer(int batch, int inputs, int outputs, ACTIVATION activation, int batch_normalize, int adam)
 {
     int i;
