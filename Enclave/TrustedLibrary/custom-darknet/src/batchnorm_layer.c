@@ -118,7 +118,7 @@ void forward_batchnorm_layer(layer l, network net)
     scale_bias(l.output, l.scales, l.batch, l.out_c, l.out_h*l.out_w);
     add_bias(l.output, l.biases, l.batch, l.out_c, l.out_h*l.out_w);
 }
-
+ 
 void backward_batchnorm_layer(layer l, network net)
 {
     if(!net.train){
