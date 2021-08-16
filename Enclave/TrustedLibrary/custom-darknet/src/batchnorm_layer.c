@@ -33,7 +33,7 @@ layer make_batchnorm_layer(int batch, int w, int h, int c)
     l.backward = backward_batchnorm_layer;
     return l;
 }
-
+ 
 void backward_scale_cpu(float *x_norm, float *delta, int batch, int n, int size, float *scale_updates)
 {
     int i,b,f;
@@ -48,7 +48,7 @@ void backward_scale_cpu(float *x_norm, float *delta, int batch, int n, int size,
         scale_updates[f] += sum;
     }
 }
-
+ 
 void mean_delta_cpu(float *delta, float *variance, int batch, int filters, int spatial, float *mean_delta)
 {
 
