@@ -10,7 +10,7 @@ image get_crop_image(crop_layer l)
     int c = l.out_c;
     return float_to_image(w,h,c,l.output);
 }
-
+ 
 void backward_crop_layer(const crop_layer l, network net){}
 void backward_crop_layer_gpu(const crop_layer l, network net){}
 
