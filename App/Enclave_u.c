@@ -78,7 +78,7 @@ sgx_status_t ecall_test_network(sgx_enclave_id_t eid, float* image, float* outpu
 	status = sgx_ecall(eid, 1, &ocall_table_Enclave, &ms);
 	return status;
 }
-
+ 
 sgx_status_t ecall_thread_enter_enclave_waiting(sgx_enclave_id_t eid, int thread_id)
 {
 	sgx_status_t status;
