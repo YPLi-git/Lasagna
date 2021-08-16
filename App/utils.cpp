@@ -23,24 +23,18 @@ int get_outputs(std::vector<int> &layers, std::vector<int> &outputs){
 
 void get_layers_shape(char* file_string, std::vector<int*> &result, int layer_num){
 
-    // printf("------------------------ 1.1\n");
     char* data = (char *)malloc(sizeof(char) * strlen(file_string) + 1); 
     sprintf(data, "%s", file_string);
     char* line = strtok(data, "\n");
 
-    // printf("------------------------ 1.2\n");
     for (int i = 0; i < layer_num; i++)
     {
-        // printf("------------------------ 1.3\n");
+
         
         int h = atoi(line);
-        // printf("%s\n", line);
-        
         
         line = strtok(NULL, "\n");
         int w = atoi(line);
-        // printf("%s\n", line);
-
 
         line = strtok(NULL, "\n");
         int c = atoi(line);
