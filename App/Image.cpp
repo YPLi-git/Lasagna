@@ -45,7 +45,7 @@ static void add_pixel(image m, int x, int y, int c, float val)
 {
     assert(x < m.w && y < m.h && c < m.c);
     m.data[c*m.h*m.w + y*m.w + x] += val;
-}
+} 
 
 image make_empty_image(int w, int h, int c)
 {
