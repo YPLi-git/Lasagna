@@ -34,7 +34,7 @@ char *get_cost_string(COST_TYPE a)
             return "wgan";
     }
     return "sse";
-}
+} 
      
 cost_layer make_cost_layer(int batch, int inputs, COST_TYPE cost_type, float scale)
 {
