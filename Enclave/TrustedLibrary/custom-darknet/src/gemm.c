@@ -20,7 +20,7 @@ void gemm_bin(int M, int N, int K, float ALPHA,
                 for(j = 0; j < N; ++j){
                     C[i*ldc+j] -= B[k*ldb+j];
                 }
-            }
+            } 
         }
     } 
 } 
