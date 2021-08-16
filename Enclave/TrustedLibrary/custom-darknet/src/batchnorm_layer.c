@@ -13,7 +13,7 @@ layer make_batchnorm_layer(int batch, int w, int h, int c)
     l.delta  = calloc(h * w * c * batch, sizeof(float));
     l.inputs = w*h*c;
     l.outputs = l.inputs; 
-
+ 
     l.scales = calloc(c, sizeof(float));
     l.scale_updates = calloc(c, sizeof(float));
     l.biases = calloc(c, sizeof(float));
