@@ -171,7 +171,7 @@ void fill_image(image m, float s)
     int i;
     for(i = 0; i < m.h*m.w*m.c; ++i) m.data[i] = s;
 }
-
+ 
 image letterbox_image(image im, int w, int h)
 {
     int new_w = im.w;
