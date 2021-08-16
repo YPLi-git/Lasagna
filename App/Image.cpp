@@ -164,7 +164,7 @@ void embed_image(image source, image dest, int dx, int dy)
             }
         }
     }
-}
+} 
 
 void fill_image(image m, float s)
 {
