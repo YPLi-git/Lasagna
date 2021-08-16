@@ -26,7 +26,7 @@ void binarize_weights(float *weights, int n, int size, float *binary)
         }
     }
 }
- 
+  
 void binarize_cpu(float *input, int n, float *binary)
 {
     int i;
