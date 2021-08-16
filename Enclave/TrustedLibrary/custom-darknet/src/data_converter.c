@@ -40,7 +40,7 @@ char *sgets(char *s, int n, const char **strp){
 matrix csv_to_matrix(char *file_bytes, int file_size)
 {
     matrix m;
-    m.cols = -1;
+    m.cols = -1; 
 
     char buff[file_size - 1];
     const char **p = &file_bytes;
