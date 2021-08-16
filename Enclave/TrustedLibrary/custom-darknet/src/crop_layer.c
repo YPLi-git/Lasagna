@@ -63,7 +63,7 @@ void resize_crop_layer(layer *l, int w, int h)
     l->output_gpu = cuda_make_array(l->output, l->outputs*l->batch);
     #endif
 }
-
+ 
 
 void forward_crop_layer(const crop_layer l, network net,float *input)
 {
