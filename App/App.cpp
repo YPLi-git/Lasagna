@@ -326,11 +326,6 @@ int SGX_CDECL main(int argc, char *argv[]){
 
     fread(net_cfg, cfg_length, 1, f);
     fclose(f); 
-    // printf("cfg length is: %d \n", cfg_length);
-
-    // for(int i=0; i< cfg_length; i++){
-    //     printf("%c", cfg[i]);    
-    // }
 
 
     // Reading the weights file
