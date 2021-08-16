@@ -124,8 +124,7 @@ void load_weights(network *net, char *file_bytes)
 
     int i;
     for(i = 0; i < net->n; ++i){
-        // printf("===================layer:%d start to loading weights;\n", i);
-        layer l = net->layers[i];
+       layer l = net->layers[i];
         if (l.dontload) continue;
         if(l.type == CONVOLUTIONAL || l.type == DECONVOLUTIONAL){
             // printf("load -------------------------------1\n");
