@@ -191,4 +191,4 @@ image letterbox_image(image im, int w, int h)
     embed_image(resized, boxed, (w-new_w)/2, (h-new_h)/2); 
     free_image(resized);
     return boxed;
-}     
+}      
