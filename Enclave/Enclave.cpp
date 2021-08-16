@@ -183,8 +183,6 @@ void ecall_thread_enter_enclave_waiting(int thread_id)
             g_gemm_args_pointer[thread_id].BETA,
             g_gemm_args_pointer[thread_id].C, 
             g_gemm_args_pointer[thread_id].ldc);
-        // printf("Thread %d finished, C[0]=%f, C[9]=%f, C[999]=%f\n", thread_id, g_gemm_args_pointer[thread_id].C[0], g_gemm_args_pointer[thread_id].C[9], g_gemm_args_pointer[thread_id].C[999]);
-        // ocall_end_measuring_training(thread_id+3, 10);
         g_finished[thread_id] = 1;
         sgx_spin_unlock(&g_spin_locks[thread_id]);
         while (g_finished[thread_id] == 1){
