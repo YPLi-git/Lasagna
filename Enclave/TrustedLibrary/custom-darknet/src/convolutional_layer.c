@@ -59,7 +59,7 @@ int convolutional_out_width(convolutional_layer l)
 {
     return (l.w + 2*l.pad - l.size) / l.stride + 1;
 }
-
+ 
 image get_convolutional_image(convolutional_layer l)
 {
     return float_to_image(l.out_w,l.out_h,l.out_c,l.output);
