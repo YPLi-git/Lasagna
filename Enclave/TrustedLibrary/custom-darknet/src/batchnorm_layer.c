@@ -104,7 +104,7 @@ void forward_batchnorm_layer(layer l, network net)
     if(net.train){
         mean_cpu(l.output, l.batch, l.out_c, l.out_h*l.out_w, l.mean);
         variance_cpu(l.output, l.mean, l.batch, l.out_c, l.out_h*l.out_w, l.variance);
-
+ 
         scal_cpu(l.out_c, .99, l.rolling_mean, 1);
         axpy_cpu(l.out_c, .01, l.mean, 1, l.rolling_mean, 1);
         scal_cpu(l.out_c, .99, l.rolling_variance, 1);
