@@ -78,7 +78,7 @@ void  variance_delta_cpu(float *x, float *delta, float *mean, float *variance, i
         }
         variance_delta[i] *= -.5 * pow(variance[i] + .00001f, (float)(-3./2.));
     }
-}
+} 
 void normalize_delta_cpu(float *x, float *mean, float *variance, float *mean_delta, float *variance_delta, int batch, int filters, int spatial, float *delta)
 {
     int f, j, k;
