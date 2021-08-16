@@ -305,8 +305,6 @@ void partition_scheduling(NN *nn){
 
 /* Application entry */
 int SGX_CDECL main(int argc, char *argv[]){
-    // (void)(argc);
-    // (void)(argv);
 
     char *cfgFile = argv[1];
     char *weightFile = argv[2];
