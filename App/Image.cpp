@@ -19,7 +19,7 @@ void free_image(image m)
     if(m.data){
         free(m.data);
     }
-}
+} 
 
 static float get_pixel(image m, int x, int y, int c)
 {
