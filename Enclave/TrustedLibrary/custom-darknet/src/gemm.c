@@ -23,7 +23,7 @@ void gemm_bin(int M, int N, int K, float ALPHA,
             }
         }
     } 
-}
+} 
 
 float *random_matrix(int rows, int cols)
 {
