@@ -45,7 +45,7 @@ crop_layer make_crop_layer(int batch, int h, int w, int c, int crop_height, int 
     #endif
     return l;
 }
-
+ 
 void resize_crop_layer(layer *l, int w, int h)
 {
     l->w = w;
