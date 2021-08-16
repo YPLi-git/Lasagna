@@ -110,7 +110,7 @@ image resize_image(image im, int w, int h)
                 set_pixel(part, c, r, k, val);
             }
         }
-    }
+    } 
     for(k = 0; k < im.c; ++k){
         for(r = 0; r < h; ++r){
             float sy = r*h_scale;
