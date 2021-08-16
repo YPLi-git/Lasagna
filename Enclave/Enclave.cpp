@@ -135,7 +135,6 @@ void load_weights(network *net, char *file_bytes)
         if(l.type == CONNECTED){
             // printf("load -------------------------------1\n");
             load_connected_weights(l, file_bytes, &offset);
-            // printf("load over-------------------------------2\n");
         }
         // printf("layer:%d; end offset is:%d;\n", i, offset);
     }
