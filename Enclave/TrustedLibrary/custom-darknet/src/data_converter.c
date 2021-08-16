@@ -73,7 +73,7 @@ data load_categorical_data_csv(char *file_bytes, int file_length, int target, in
     matrix X = csv_to_matrix(file_bytes, file_length);
     float *truth_1d = pop_column(&X, target);
     float **truth = one_hot_encode(truth_1d, X.rows, k);
-    matrix y;
+    matrix y; 
     y.rows = X.rows;
     y.cols = k;
     y.vals = truth;
