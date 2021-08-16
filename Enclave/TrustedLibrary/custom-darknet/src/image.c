@@ -6,7 +6,7 @@ float im2col_get_pixel(float *im, int height, int width, int channels,
 {
     row -= pad;
     col -= pad;
-
+ 
     if (row < 0 || col < 0 ||
         row >= height || col >= width) return 0;
     return im[col + width*(row + height*channel)];
