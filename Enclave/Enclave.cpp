@@ -151,7 +151,6 @@ void ecall_build_network(char *cfg, int cfg_length, char *weights, int weights_l
     // printf("build over -------------------------------2\n");
     free_list(sections);
     
-    // printf("build over -------------------------------3\n");
     if (weights) {
         load_weights(net, weights);
     }
