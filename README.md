@@ -1,2 +1,2 @@
 # Lasagna
-An example to execute DNN inference task in SGX environments.
+An example to execute DNN inference task in SGX environment.
