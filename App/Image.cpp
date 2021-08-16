@@ -119,7 +119,7 @@ image resize_image(image im, int w, int h)
             for(c = 0; c < w; ++c){
                 float val = (1-dy) * get_pixel(part, c, iy, k);
                 set_pixel(resized, c, r, k, val);
-            }
+            } 
             if(r == h-1 || im.h == 1) continue;
             for(c = 0; c < w; ++c){
                 float val = dy * get_pixel(part, c, iy+1, k);
